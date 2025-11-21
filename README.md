@@ -17,5 +17,17 @@ El manual está dividido en las siguientes secciones clave:
 * `/imagenes`: Contiene las imágenes y diagramas utilizados.
 * `/referencias`: Documentos de apoyo y fuentes de información.
 
--  Cómo Contribuir (Instrucciones)
-[Aquí irán las instrucciones de contribución una vez que las definamos mejor.]
+-  Cómo Contribuir
+
+Para añadir o modificar secciones del manual, sigue este flujo de trabajo:
+
+1.  **Crea un Issue** para la sección o error que deseas corregir o añadir (si no existe).
+2.  **Crea una Rama** de trabajo a partir de `main`. Utiliza la convención `feature/nombre-de-la-seccion` o `fix/descripcion-del-error`.
+    ```bash
+    git checkout -b feature/seccion-2-formatos
+    ```
+3.  **Realiza los Cambios** en los archivos del directorio `/documentos`.
+4.  **Crea un Commit** y en el mensaje, haz referencia al Issue que cierras (`Cierra #N`).
+5.  **Abre un Pull Request (PR)** de tu rama hacia `main`.
+6.  Una vez aprobado (o auto-aprobado en este caso), fúndelo (**Merge**).
+7.  **Actualiza tu rama local** (`git pull origin main`).
